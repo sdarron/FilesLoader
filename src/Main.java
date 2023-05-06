@@ -8,7 +8,11 @@ public class Main {
     public static void main(String[] args) throws Exception {
         String fileName = "src/google.png";
         String url = "https://www.google.com.ua/images/srpr/logo11w.png";
+        saveUrl( fileName, url);
 
+    }
+
+    public static void saveUrl( String fileName, String url){
         FileOutputStream fout = null;
         BufferedInputStream in = null;
         try{
